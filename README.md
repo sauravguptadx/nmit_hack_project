@@ -5,11 +5,11 @@ This is the project for NMIT Hackathon
 
 For long, different e-voting systems have been provided with the goal of increasing security and minimizing cost. Blockchain is a major breakthrough in the technological industry that provide immense secured platform. With the launch of Ethereum, a decentralized platform which runs decentralized applications (DApps) on it, a secured voting system now seems possible. Many organizations have now shifted their focus on voting through blockchain platforms. There’s a very high chance that a normal voting method won’t lead to a clear majority. There can be many ways to deal with this issue which includes another voting process to take place which can be quite expensive in terms of time and resources. In our paper, we introduce the vote-trading concept where the votes can be redistributed to other candidates in case if there is no clear majority and also this ‘ majority’ factor can be set by the organization according to their requirement.
 
-###Objectives
+### Objectives
 
 We implement the blockchain based preferential e-voting system using the Solidity programming language where instead of one vote per candidate, we provide the concept of giving preference to the candidates.
 
-###Implementation 
+### Implementation 
 
 Once the user enters the credentials correctly, i.e., the user is successfully able to log in into system, the user would be directed to the voting portal. In the voting portal, there would be a list of candidates. The voter needs to give preference to the candidates with the lowest number given to the most preferred candidate and the largest number given to the least preferred candidate.
 
