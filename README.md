@@ -34,9 +34,11 @@ In **set_majority()** function, the owner of the contract sets the majority for 
 
 In **give_voting_rigths()** function, the organizer gives voting rights to certain addresses or users. Only these addresses/users can vote.
 
-Currently implementing function are **vote()**, **count_votes** and **redistribute_votes()**
+Currently implementing function are **vote()**, **count_votes()**, **winningResult()** and **redistribute_votes()**
 In **vote()**, the users or the voters will give preferences to the candidates and submit their vote.
 
-In **count_votes**, we find the number of votes casted for each candidate, find the candidate with maximum votes and find the one with minimum votes.
+In **count_votes()**, we find the number of votes casted for each candidate, find the candidate with maximum votes and find the one with minimum votes.
+
+In **winningResult()** if the candidate with maximum votes has votes more than majority percentage, then this function shows the result of the winning candidate who has won the election with clear majority else this function will call **redistribute_votes()** function.
 
 In **redistribute_votes()**, in case we don’t have a clear majority, the votes of the last candidate are distributed according to the preferences given by the voters for that candidate. The last candidate is removed from the competition and its votes distributed to other candidates according to the preferences given in the votes of the eliminating candidates. This function is called as long as we don’t get a clear majority winner.
