@@ -69,5 +69,21 @@ contract PrefVoting{
                                                     // this gives the user to have voting rights
      
     }
+
+
+    function vote(uint[] preference_array) public
+    {
+        
+        require(voters[msg.sender].has_voting_rights == true, "You are not authorized to vote");
+        require(voters[msg.sender].voted == false, "You have already casted your vote");
+        require(preference_array.length == get_number_of_candidates(), "Please enter the exact numbers of that candidates");
+        
+        voters[msg.sender].voting_preferencing = preference_array;
+       
+       /* for(uint i=0; i<preference_array_len; i++)
+        {
+            voters[msg.sender].voting_preferencing[i] = preference_array[i];
+        }*/
+    }
     
 }
